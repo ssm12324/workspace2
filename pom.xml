@@ -10,6 +10,7 @@
     <version>1.0.0</version>
 
     <build>
+        <finalName>sk012-my-second-app-1.0.0</finalName> <!-- 여기 추가! -->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
