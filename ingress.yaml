@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: sk012-ui-ingress
+  namespace: skala-practice
+spec:
+  ingressClassName: public-nginx
+  rules:
+  - host: sk012-ui.skala25a.project.skala-ai.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: sk012-ui-service
+            port:
+              number: 80
