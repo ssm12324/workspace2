@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: sk012-ui-second
-        image: amdp-registry.skala-ai.com/skala25a/sk012-ui-second:1.0.kaniko-docker-xxx  # <-- 나중에 sed로 치환
+        image: amdp-registry.skala-ai.com/skala25a/sk012-my-second-app:1.0.kaniko-docker-22-4587b2318e57
         ports:
         - containerPort: 80
